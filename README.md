@@ -1,6 +1,6 @@
 # `discord-activity-spacetimedb-example`
 
-This projects servers as an example on how to use [SpacetimeDB](https://github.com/clockworklabs/SpacetimeDB) for developing discord activities.
+This projects serves as an example on how to use [SpacetimeDB](https://github.com/clockworklabs/SpacetimeDB) for developing discord activities.
 
 It uses [nginx](https://nginx.org/) to route discords requests to the appropriate service. This way your activity runs behind a single URL which you can map to your discord application.
 
