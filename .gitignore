@@ -1,0 +1,5 @@
+.env
+.idea/
+./spacetime-data/
+node_modules/
+dist/

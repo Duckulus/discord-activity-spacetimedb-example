@@ -1,0 +1,25 @@
+services:
+  client:
+    container_name: tictactoe-client
+    build:
+      dockerfile: ./client/Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - "./nginx/nginx.conf://etc/nginx/nginx.conf:ro"
+  api:
+    container_name: tictactoe-api
+    env_file:
+      - .env
+    build:
+      dockerfile: ./api/Dockerfile
+  server:
+    container_name: tictactoe-server
+    build:
+      dockerfile: ./server/Dockerfile
+    ports:
+      - "3000:3000"
+
+networks:
+  network:
+    driver: bridge
